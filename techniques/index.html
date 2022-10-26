@@ -1,0 +1,2320 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.2.11">
+    
+    
+      
+        <title>Techniques - MITRE | ATLAS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.8c5ef100.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.9647289d.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#techniques" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="MITRE | ATLAS" class="md-header__button md-logo" aria-label="MITRE | ATLAS" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 11c0 5.55-3.84 10.74-9 12-5.16-1.26-9-6.45-9-12V5l9-4 9 4v6m-9 10c3.75-1 7-5.46 7-9.78V6.3l-7-3.12V21Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MITRE | ATLAS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Techniques
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_3">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../index.html" class="md-tabs__link">
+      Overview
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../faq.html" class="md-tabs__link">
+      FAQ
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../case-studies/index.html" class="md-tabs__link">
+        Case studies
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../tactics/index.html" class="md-tabs__link">
+        Tactics
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="index.html" class="md-tabs__link md-tabs__link--active">
+        Techniques
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="MITRE | ATLAS" class="md-nav__button md-logo" aria-label="MITRE | ATLAS" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 11c0 5.55-3.84 10.74-9 12-5.16-1.26-9-6.45-9-12V5l9-4 9 4v6m-9 10c3.75-1 7-5.46 7-9.78V6.3l-7-3.12V21Z"/></svg>
+
+    </a>
+    MITRE | ATLAS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq.html" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../case-studies/index.html">Case studies</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Case studies" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Case studies
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../case-studies/AML.CS0000.html" class="md-nav__link">
+        Evasion of Deep Learning Detector for Malware C&C Traffic
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../case-studies/AML.CS0001.html" class="md-nav__link">
+        Botnet Domain Generation Algorithm (DGA) Detection Evasion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../case-studies/AML.CS0002.html" class="md-nav__link">
+        VirusTotal Poisoning
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../case-studies/AML.CS0003.html" class="md-nav__link">
+        Bypassing Cylance's AI Malware Detection
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../case-studies/AML.CS0004.html" class="md-nav__link">
+        Camera Hijack Attack on Facial Recognition System
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../case-studies/AML.CS0005.html" class="md-nav__link">
+        Attack on Machine Translation Service - Google Translate, Bing Translator, and Systran Translate
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../case-studies/AML.CS0006.html" class="md-nav__link">
+        ClearviewAI Misconfiguration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../case-studies/AML.CS0007.html" class="md-nav__link">
+        GPT-2 Model Replication
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../case-studies/AML.CS0008.html" class="md-nav__link">
+        ProofPoint Evasion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../case-studies/AML.CS0009.html" class="md-nav__link">
+        Tay Poisoning
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../case-studies/AML.CS0010.html" class="md-nav__link">
+        Microsoft Azure Service Disruption
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../case-studies/AML.CS0011.html" class="md-nav__link">
+        Microsoft Edge AI Evasion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../case-studies/AML.CS0012.html" class="md-nav__link">
+        Face Identification System Evasion via Physical Countermeasures
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../case-studies/AML.CS0013.html" class="md-nav__link">
+        Backdoor Attack on Deep Learning Models in Mobile Apps
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../case-studies/AML.CS0014.html" class="md-nav__link">
+        Confusing Antimalware Neural Networks
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../tactics/index.html">Tactics</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Tactics" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Tactics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tactics/AML.TA0000.html" class="md-nav__link">
+        ML Model Access
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tactics/AML.TA0001.html" class="md-nav__link">
+        ML Attack Staging
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tactics/AML.TA0002.html" class="md-nav__link">
+        Reconnaissance
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tactics/AML.TA0003.html" class="md-nav__link">
+        Resource Development
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tactics/AML.TA0004.html" class="md-nav__link">
+        Initial Access
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tactics/AML.TA0005.html" class="md-nav__link">
+        Execution
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tactics/AML.TA0006.html" class="md-nav__link">
+        Persistence
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tactics/AML.TA0007.html" class="md-nav__link">
+        Defense Evasion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tactics/AML.TA0008.html" class="md-nav__link">
+        Discovery
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tactics/AML.TA0009.html" class="md-nav__link">
+        Collection
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tactics/AML.TA0010.html" class="md-nav__link">
+        Exfiltration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tactics/AML.TA0011.html" class="md-nav__link">
+        Impact
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index md-nav__link--active">
+          <a href="index.html">Techniques</a>
+          
+            <label for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Techniques" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Techniques
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0000.000.html" class="md-nav__link">
+        Search for Victim's Publicly Available Research Materials: Journals and Conference Proceedings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0000.001.html" class="md-nav__link">
+        Search for Victim's Publicly Available Research Materials: Pre-Print Repositories
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0000.002.html" class="md-nav__link">
+        Search for Victim's Publicly Available Research Materials: Technical Blogs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0000.html" class="md-nav__link">
+        Search for Victim's Publicly Available Research Materials
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0001.html" class="md-nav__link">
+        Search for Publicly Available Adversarial Vulnerability Analysis
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0002.000.html" class="md-nav__link">
+        Acquire Public ML Artifacts: Datasets
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0002.001.html" class="md-nav__link">
+        Acquire Public ML Artifacts: Models
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0002.html" class="md-nav__link">
+        Acquire Public ML Artifacts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0003.html" class="md-nav__link">
+        Search Victim-Owned Websites
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0004.html" class="md-nav__link">
+        Search Application Repositories
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0005.000.html" class="md-nav__link">
+        Create Proxy ML Model: Train Proxy via Gathered ML Artifacts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0005.001.html" class="md-nav__link">
+        Create Proxy ML Model: Train Proxy via Replication
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0005.002.html" class="md-nav__link">
+        Create Proxy ML Model: Use Pre-Trained Model
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0005.html" class="md-nav__link">
+        Create Proxy ML Model
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0006.html" class="md-nav__link">
+        Active Scanning
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0007.html" class="md-nav__link">
+        Discover ML Artifacts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0008.000.html" class="md-nav__link">
+        Acquire Infrastructure: ML Development Workspaces
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0008.001.html" class="md-nav__link">
+        Acquire Infrastructure: Consumer Hardware
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0008.html" class="md-nav__link">
+        Acquire Infrastructure
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0010.000.html" class="md-nav__link">
+        ML Supply Chain Compromise: GPU Hardware
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0010.001.html" class="md-nav__link">
+        ML Supply Chain Compromise: ML Software
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0010.002.html" class="md-nav__link">
+        ML Supply Chain Compromise: Data
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0010.003.html" class="md-nav__link">
+        ML Supply Chain Compromise: Model
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0010.html" class="md-nav__link">
+        ML Supply Chain Compromise
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0011.000.html" class="md-nav__link">
+        User Execution: Unsafe ML Artifacts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0011.html" class="md-nav__link">
+        User Execution
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0012.html" class="md-nav__link">
+        Valid Accounts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0013.html" class="md-nav__link">
+        Discover ML Model Ontology
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0014.html" class="md-nav__link">
+        Discover ML Model Family
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0015.html" class="md-nav__link">
+        Evade ML Model
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0016.000.html" class="md-nav__link">
+        Obtain Capabilities: Adversarial ML Attack Implementations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0016.001.html" class="md-nav__link">
+        Obtain Capabilities: Software Tools
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0016.html" class="md-nav__link">
+        Obtain Capabilities
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0017.html" class="md-nav__link">
+        Develop Adversarial ML Attack Capabilities
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0018.000.html" class="md-nav__link">
+        Backdoor ML Model: Poison ML Model
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0018.001.html" class="md-nav__link">
+        Backdoor ML Model: Inject Payload
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0018.html" class="md-nav__link">
+        Backdoor ML Model
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0019.html" class="md-nav__link">
+        Publish Poisoned Datasets
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0020.html" class="md-nav__link">
+        Poison Training Data
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0021.html" class="md-nav__link">
+        Establish Accounts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0024.000.html" class="md-nav__link">
+        Exfiltration via ML Inference API: Infer Training Data Membership
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0024.001.html" class="md-nav__link">
+        Exfiltration via ML Inference API: Invert ML Model
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0024.002.html" class="md-nav__link">
+        Exfiltration via ML Inference API: Extract ML Model
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0024.html" class="md-nav__link">
+        Exfiltration via ML Inference API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0025.html" class="md-nav__link">
+        Exfiltration via Cyber Means
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0029.html" class="md-nav__link">
+        Denial of ML Service
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0031.html" class="md-nav__link">
+        Erode ML Model Integrity
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0034.html" class="md-nav__link">
+        Cost Harvesting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0035.html" class="md-nav__link">
+        ML Artifact Collection
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0036.html" class="md-nav__link">
+        Data from Information Repositories
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0040.html" class="md-nav__link">
+        ML Model Inference API Access
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0041.html" class="md-nav__link">
+        Physical Environment Access
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0042.html" class="md-nav__link">
+        Verify Attack
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0043.000.html" class="md-nav__link">
+        Craft Adversarial Data: White-Box Optimization
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0043.001.html" class="md-nav__link">
+        Craft Adversarial Data: Black-Box Optimization
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0043.002.html" class="md-nav__link">
+        Craft Adversarial Data: Black-Box Transfer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0043.003.html" class="md-nav__link">
+        Craft Adversarial Data: Manual Modification
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0043.004.html" class="md-nav__link">
+        Craft Adversarial Data: Insert Backdoor Trigger
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0043.html" class="md-nav__link">
+        Craft Adversarial Data
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0044.html" class="md-nav__link">
+        Full ML Model Access
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0045.html" class="md-nav__link">
+        ML Intellectual Property Theft
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0046.html" class="md-nav__link">
+        Spamming ML System with Chaff Data
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AML.T0047.html" class="md-nav__link">
+        ML-Enabled Product or Service
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="techniques">Techniques</h1>
+<p>Techniques describe the means by which adversaries achieve tactical goals. They represent “how” an adversary achieves a tactical objective by performing an action.
+For example, an adversary may gain initial access by compromising the machine learning (ML) supply chain.</p>
+<p>Techniques may also represent “what” an adversary gains by performing an action. This is a useful distinction for the ML Attack Staging tactic,
+where the adversary is typically creating or modifying an ML artifact that will be used in a subsequent tactical objective.
+There can be multiple techniques in each tactic category as there are many ways to achieve tactical objectives.
+<sup><a href="https://attack.mitre.org/docs/ATTACK_Design_and_Philosophy_March_2020.pdf">[1]</a></sup></p>
+<p>The table below lists techniques from MITRE ATLAS™. Scroll through the table or use the sidebar to access more information.</p>
+<table>
+<thead>
+<tr>
+<th align="left">ID</th>
+<th align="left">Name</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="AML.T0000.html">AML.T0000</a></td>
+<td align="left"><a href="AML.T0000.html">Search for Victim's Publicly Available Research Materials</a></td>
+<td align="left">Adversaries may search publicly available research to learn how and where machine learning is used within a victim organization. The adversary can use this information to identify targets for attack, or to tailor an existing attack to make it more effective. Organizations often use open source model architectures trained on additional proprietary data in production. Knowledge of this underlying architecture allows the adversary to craft more realistic proxy models (<a href="AML.T0005.html">Create Proxy ML Model</a>). An adversary can search these resources for publications for authors employed at the victim organization.  Research materials may exist as academic papers published in <a href="AML.T0000.000.html">Journals and Conference Proceedings</a>, or stored in <a href="AML.T0000.001.html">Pre-Print Repositories</a>, as well as <a href="AML.T0000.002.html">Technical Blogs</a>.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0000.000.html">AML.T0000.000</a></td>
+<td align="left"><a href="AML.T0000.000.html">Journals and Conference Proceedings</a></td>
+<td align="left">Many of the publications accepted at premier machine learning conferences and journals come from commercial labs. Some journals and conferences are open access, others may require paying for access or a membership. These publications will often describe in detail all aspects of a particular approach for reproducibility. This information can be used by adversaries to implement the paper.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0000.001.html">AML.T0000.001</a></td>
+<td align="left"><a href="AML.T0000.001.html">Pre-Print Repositories</a></td>
+<td align="left">Pre-Print repositories, such as arXiv, contain the latest academic research papers that haven't been peer reviewed. They may contain research notes, or technical reports that aren't typically published in journals or conference proceedings. Pre-print repositories also serve as a central location to share papers that have been accepted to journals. Searching pre-print repositories  provide adversaries with a relatively up-to-date view of what researchers in the victim organization are working on.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0000.002.html">AML.T0000.002</a></td>
+<td align="left"><a href="AML.T0000.002.html">Technical Blogs</a></td>
+<td align="left">Research labs at academic institutions and Company R&amp;D divisions often have blogs that highlight their use of machine learning and its application to the organizations unique problems. Individual researchers also frequently document their work in blogposts. An adversary may search for posts made by the target victim organization or its employees. In comparison to <a href="AML.T0000.000.html">Journals and Conference Proceedings</a> and <a href="AML.T0000.001.html">Pre-Print Repositories</a> this material will often contain more practical aspects of the machine learning system. This could include underlying technologies and frameworks used, and possibly some information about the API access and use case. This will help the adversary better understand how that organization is using machine learning internally and the details of their approach that could aid in tailoring an attack.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0001.html">AML.T0001</a></td>
+<td align="left"><a href="AML.T0001.html">Search for Publicly Available Adversarial Vulnerability Analysis</a></td>
+<td align="left">Much like the <a href="AML.T0000.html">Search for Victim's Publicly Available Research Materials</a>, there is often ample research available on the vulnerabilities of common models. Once a target has been identified, an adversary will likely try to identify any pre-existing work that has been done for this class of models. This will include not only reading academic papers that may identify the particulars of a successful attack, but also identifying pre-existing implementations of those attacks. The adversary may <a href="AML.T0016.000.html">Adversarial ML Attack Implementations</a> or <a href="AML.T0017.html">Develop Adversarial ML Attack Capabilities</a> their own if necessary.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0003.html">AML.T0003</a></td>
+<td align="left"><a href="AML.T0003.html">Search Victim-Owned Websites</a></td>
+<td align="left">Adversaries may search websites owned by the victim for information that can be used during targeting. Victim-owned websites may contain technical details about their ML-enabled products or services. Victim-owned websites may contain a variety of details, including names of departments/divisions, physical locations, and data about key employees such as names, roles, and contact info. These sites may also have details highlighting business operations and relationships.  Adversaries may search victim-owned websites to gather actionable information. This information may help adversaries tailor their attacks (e.g. <a href="AML.T0017.html">Develop Adversarial ML Attack Capabilities</a> or <a href="AML.T0043.003.html">Manual Modification</a>). Information from these sources may reveal opportunities for other forms of reconnaissance (e.g. <a href="AML.T0000.html">Search for Victim's Publicly Available Research Materials</a> or <a href="AML.T0001.html">Search for Publicly Available Adversarial Vulnerability Analysis</a>)</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0004.html">AML.T0004</a></td>
+<td align="left"><a href="AML.T0004.html">Search Application Repositories</a></td>
+<td align="left">Adversaries may search open application repositories during targeting. Examples of these include Google Play, the iOS App store, the macOS App Store, and the Microsoft Store.  Adversaries may craft search queries seeking applications that contain a ML-enabled components. Frequently, the next step is to <a href="AML.T0002.html">Acquire Public ML Artifacts</a>.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0006.html">AML.T0006</a></td>
+<td align="left"><a href="AML.T0006.html">Active Scanning</a></td>
+<td align="left">An adversary may probe or scan the victim system to gather information for targeting. This is distinct from other reconnaissance techniques that do not involve direct interaction with the victim system.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0002.html">AML.T0002</a></td>
+<td align="left"><a href="AML.T0002.html">Acquire Public ML Artifacts</a></td>
+<td align="left">Adversaries may search public sources, including cloud storage, public-facing services, and software or data repositories, to identify machine learning artifacts. These machine learning artifacts may include the software stack used to train and deploy models, training and testing data, model configurations and parameters. An adversary will be particularly interested in artifacts hosted by or associated with the victim organization as they may represent what that organization uses in a production environment. Adversaries may identify artifact repositories via other resources associated with the victim organization (e.g. <a href="AML.T0003.html">Search Victim-Owned Websites</a> or <a href="AML.T0000.html">Search for Victim's Publicly Available Research Materials</a>). These ML artifacts often provide adversaries with details of the ML task and approach.  ML artifacts can aid in an adversary's ability to <a href="AML.T0005.html">Create Proxy ML Model</a>. If these artifacts include pieces of the actual model in production, they can be used to directly <a href="AML.T0043.html">Craft Adversarial Data</a>. Acquiring some artifacts requires registration (providing user details such email/name), AWS keys, or written requests, and may require the adversary to <a href="AML.T0021.html">Establish Accounts</a>.  Artifacts might be hosted on victim-controlled infrastructure, providing the victim with some information on who has accessed that data.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0002.000.html">AML.T0002.000</a></td>
+<td align="left"><a href="AML.T0002.000.html">Datasets</a></td>
+<td align="left">Adversaries may collect public datasets to use in their operations. Datasets used by the victim organization or datasets that are representative of the data used by the victim organization may be valuable to adversaries. Datasets can be stored in cloud storage, or on victim-owned websites. Some datasets require the adversary to <a href="AML.T0021.html">Establish Accounts</a> for access.  Acquired datasets help the adversary advance their operations, stage attacks,  and tailor attacks to the victim organization.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0002.001.html">AML.T0002.001</a></td>
+<td align="left"><a href="AML.T0002.001.html">Models</a></td>
+<td align="left">Adversaries may acquire public models to use in their operations. Adversaries may seek models used by the victim organization or models that are representative of those used by the victim organization. Representative models may include model architectures, or pre-trained models which define the architecture as well as model parameters from training on a dataset. The adversary may search public sources for common model architecture configuration file formats such as yaml or python configuration files, and common model storage file formats such as ONNX (.onnx), HDF5 (.h5), Pickle (.pkl), PyTorch (.pth), or TensorFlow (.pb, .tflite).  Acquired models are useful in advancing the adversary's operations and are frequently used to tailor attacks to the victim model.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0016.html">AML.T0016</a></td>
+<td align="left"><a href="AML.T0016.html">Obtain Capabilities</a></td>
+<td align="left">Adversaries may search for and obtain software capabilities for use in their operations. Capabilities may be specific to ML-based attacks <a href="AML.T0016.000.html">Adversarial ML Attack Implementations</a> or generic software tools repurposed for malicious intent (<a href="AML.T0016.001.html">Software Tools</a>). In both instances, an adversary may modify or customize the capability to aid in targeting a particular ML system.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0016.000.html">AML.T0016.000</a></td>
+<td align="left"><a href="AML.T0016.000.html">Adversarial ML Attack Implementations</a></td>
+<td align="left">Adversaries may search for existing open source implementations of machine learning attacks. The research community often publishes their code for reproducibility and to further future research. Libraries intended for research purposes, such as CleverHans, the Adversarial Robustness Toolbox, and FoolBox, can be weaponized by an adversary. Adversaries may also obtain and use tools that were not originally designed for adversarial ML attacks as part of their attack.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0016.001.html">AML.T0016.001</a></td>
+<td align="left"><a href="AML.T0016.001.html">Software Tools</a></td>
+<td align="left">Adversaries may search for and obtain software tools to support their operations. Software designed for legitimate use may be repurposed by an adversary for malicious intent. An adversary may modify or customize software tools to achieve their purpose. Software tools used to support attacks on ML systems are not necessarily ML-based themselves.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0017.html">AML.T0017</a></td>
+<td align="left"><a href="AML.T0017.html">Develop Adversarial ML Attack Capabilities</a></td>
+<td align="left">Adversaries may develop their own adversarial attacks. They may leverage existing libraries as a starting point (<a href="AML.T0016.000.html">Adversarial ML Attack Implementations</a>). They may implement ideas described in public research papers or develop custom made attacks for the victim model.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0008.html">AML.T0008</a></td>
+<td align="left"><a href="AML.T0008.html">Acquire Infrastructure</a></td>
+<td align="left">Adversaries may buy, lease, or rent infrastructure for use throughout their operation. A wide variety of infrastructure exists for hosting and orchestrating adversary operations. Infrastructure solutions include physical or cloud servers, domains, mobile devices, and third-party web services. Free resources may also be used, but they are typically limited.  Use of these infrastructure solutions allows an adversary to stage, launch, and execute an operation. Solutions may help adversary operations blend in with traffic that is seen as normal, such as contact to third-party web services. Depending on the implementation, adversaries may use infrastructure that makes it difficult to physically tie back to them as well as utilize infrastructure that can be rapidly provisioned, modified, and shut down.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0008.000.html">AML.T0008.000</a></td>
+<td align="left"><a href="AML.T0008.000.html">ML Development Workspaces</a></td>
+<td align="left">Developing and staging machine learning attacks often requires expensive compute resources. Adversaries may need access to one or many GPUs in order to develop an attack. They may try to anonymously use free resources such as Google Colaboratory, or cloud resources such as AWS, Azure, or Google Cloud as an efficient way to stand up temporary resources to conduct operations. Multiple workspaces may be used to avoid detection.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0008.001.html">AML.T0008.001</a></td>
+<td align="left"><a href="AML.T0008.001.html">Consumer Hardware</a></td>
+<td align="left">Adversaries may acquire consumer hardware to conduct their attacks. Owning the hardware provides the adversary with complete control of the environment. These devices can be hard to trace.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0019.html">AML.T0019</a></td>
+<td align="left"><a href="AML.T0019.html">Publish Poisoned Datasets</a></td>
+<td align="left">Adversaries may <a href="AML.T0020.html">Poison Training Data</a> and publish it to a public location. The poisoned dataset may be a novel dataset or a poisoned variant of an existing open source dataset. This data may be introduced to a victim system via <a href="AML.T0010.html">ML Supply Chain Compromise</a>.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0010.html">AML.T0010</a></td>
+<td align="left"><a href="AML.T0010.html">ML Supply Chain Compromise</a></td>
+<td align="left">Adversaries may gain initial access to a system by compromising the unique portions of the ML supply chain. This could include <a href="AML.T0010.000.html">GPU Hardware</a>, <a href="AML.T0010.002.html">Data</a> and its annotations, parts of the ML <a href="AML.T0010.001.html">ML Software</a> stack, or the <a href="AML.T0010.003.html">Model</a> itself. In some instances the attacker will need secondary access to fully carry out an attack using compromised components of the supply chain.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0010.000.html">AML.T0010.000</a></td>
+<td align="left"><a href="AML.T0010.000.html">GPU Hardware</a></td>
+<td align="left">Most machine learning systems require access to certain specialized hardware, typically GPUs. Adversaries can target machine learning systems by specifically targeting the GPU supply chain.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0010.001.html">AML.T0010.001</a></td>
+<td align="left"><a href="AML.T0010.001.html">ML Software</a></td>
+<td align="left">Most machine learning systems rely on a limited set of machine learning frameworks. An adversary could get access to a large number of machine learning systems through a comprise of one of their supply chains. Many machine learning projects also rely on other open source implementations of various algorithms. These can also be compromised in a targeted way to get access to specific systems.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0010.002.html">AML.T0010.002</a></td>
+<td align="left"><a href="AML.T0010.002.html">Data</a></td>
+<td align="left">Data is a key vector of supply chain compromise for adversaries. Every machine learning project will require some form of data. Many rely on large open source datasets that are publicly available. An adversary could rely on compromising these sources of data. The malicious data could be a result of <a href="AML.T0020.html">Poison Training Data</a> or include traditional malware.  An adversary can also target private datasets in the labeling phase. The creation of private datasets will often require the hiring of outside labeling services. An adversary can poison a dataset by modifying the labels being generated by the labeling service.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0010.003.html">AML.T0010.003</a></td>
+<td align="left"><a href="AML.T0010.003.html">Model</a></td>
+<td align="left">Machine learning systems often rely on open sourced models in various ways. Most commonly, the victim organization may be using these models for fine tuning. These models will be downloaded from an external source and then used as the base for the model as it is tuned on a smaller, private dataset. Loading models often requires executing some saved code in the form of a saved model file. These can be compromised with traditional malware, or through some adversarial machine learning techniques.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0040.html">AML.T0040</a></td>
+<td align="left"><a href="AML.T0040.html">ML Model Inference API Access</a></td>
+<td align="left">Adversaries may gain access to a model via legitimate access to the inference API. Inference API access can be a source of information to the adversary (<a href="AML.T0013.html">Discover ML Model Ontology</a>, <a href="AML.T0013.html">Discover ML Model Family</a>), a means of staging the attack (<a href="AML.T0042.html">Verify Attack</a>, <a href="AML.T0043.html">Craft Adversarial Data</a>), or for introducing data to the target system for Impact (<a href="AML.T0015.html">Evade ML Model</a>, <a href="AML.T0031.html">Erode ML Model Integrity</a>).</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0047.html">AML.T0047</a></td>
+<td align="left"><a href="AML.T0047.html">ML-Enabled Product or Service</a></td>
+<td align="left">Adversaries may use a product or service that uses machine learning under the hood to gain access to the underlying machine learning model. This type of indirect model access may reveal details of the ML model or its inferences in logs or metadata.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0041.html">AML.T0041</a></td>
+<td align="left"><a href="AML.T0041.html">Physical Environment Access</a></td>
+<td align="left">In addition to the attacks that take place purely in the digital domain, adversaries may also exploit the physical environment for their attacks. If the model is interacting with data collected from the real world in some way, the adversary can influence the model through access to wherever the data is being collected. By modifying the data in the collection process, the adversary can perform modified versions of attacks designed for digital access.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0044.html">AML.T0044</a></td>
+<td align="left"><a href="AML.T0044.html">Full ML Model Access</a></td>
+<td align="left">Adversaries may gain full "white-box" access to a machine learning model. This means the adversary has complete knowledge of the model architecture, its parameters, and class ontology. They may exfiltrate the model to <a href="AML.T0043.html">Craft Adversarial Data</a> and <a href="AML.T0042.html">Verify Attack</a> in an offline where it is hard to detect their behavior.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0013.html">AML.T0013</a></td>
+<td align="left"><a href="AML.T0013.html">Discover ML Model Ontology</a></td>
+<td align="left">Adversaries may discover the ontology of a machine learning model's output space, for example, the types of objects a model can detect. The adversary may discovery the ontology by repeated queries to the model, forcing it to enumerate its output space. Or the ontology may be discovered in a configuration file or in documentation about the model.  The model ontology helps the adversary understand how the model is being used by the victim. It is useful to the adversary in creating targeted attacks.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0014.html">AML.T0014</a></td>
+<td align="left"><a href="AML.T0014.html">Discover ML Model Family</a></td>
+<td align="left">Adversaries may discover the general family of model. General information about the model may be revealed in documentation, or the adversary may used carefully constructed examples and analyze the model's responses to categorize it.  Knowledge of the model family can help the adversary identify means of attacking the model and help tailor the attack.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0020.html">AML.T0020</a></td>
+<td align="left"><a href="AML.T0020.html">Poison Training Data</a></td>
+<td align="left">Adversaries may attempt to poison datasets used by a ML model by modifying the underlying data or its labels. This allows the adversary to embed vulnerabilities in ML models trained on the data that may not be easily detectable. Data poisoning attacks may or may not require modifying the labels. The embedded vulnerability is activated at a later time by data samples with an <a href="AML.T0043.004.html">Insert Backdoor Trigger</a>  Poisoned data can be introduced via <a href="AML.T0010.html">ML Supply Chain Compromise</a> or the data may be poisoned after the adversary gains <a href="/tactics/AML.TA0004">Initial Access</a> to the system.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0021.html">AML.T0021</a></td>
+<td align="left"><a href="AML.T0021.html">Establish Accounts</a></td>
+<td align="left">Adversaries may create accounts with various services for use in targeting, to gain access to resources needed in <a href="/tactics/AML.TA0001">ML Attack Staging</a>, or for victim impersonation.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0005.html">AML.T0005</a></td>
+<td align="left"><a href="AML.T0005.html">Create Proxy ML Model</a></td>
+<td align="left">Adversaries may obtain models to serve as proxies for the target model in use at the victim organization. Proxy models are used to simulate complete access to the target model in a fully offline manner.  Adversaries may train models from representative datasets, attempt to replicate models from victim inference APIs, or use available pre-trained models.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0005.000.html">AML.T0005.000</a></td>
+<td align="left"><a href="AML.T0005.000.html">Train Proxy via Gathered ML Artifacts</a></td>
+<td align="left">Proxy models may be trained from ML artifacts (such as data, model architectures, and pre-trained models) that are representative of the target model gathered by the adversary. This can be used to develop attacks that require higher levels of access than the adversary has available or as a means to validate pre-existing attacks without interacting with the target model.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0005.001.html">AML.T0005.001</a></td>
+<td align="left"><a href="AML.T0005.001.html">Train Proxy via Replication</a></td>
+<td align="left">Adversaries may replicate a private model. By repeatedly querying the victim's <a href="AML.T0040.html">ML Model Inference API Access</a>, the adversary can collect the target model's inferences into a dataset. The inferences are used as labels for training a separate model offline that will mimic the behavior and performance of the target model.  A replicated model that closely mimic's the target model is a valuable resource in staging the attack. The adversary can use the replicated model to <a href="AML.T0043.html">Craft Adversarial Data</a> for various purposes (e.g. <a href="AML.T0015.html">Evade ML Model</a>, <a href="AML.T0046.html">Spamming ML System with Chaff Data</a>).</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0005.002.html">AML.T0005.002</a></td>
+<td align="left"><a href="AML.T0005.002.html">Use Pre-Trained Model</a></td>
+<td align="left">Adversaries may use an off-the-shelf pre-trained model as a proxy for the victim model to aid in staging the attack.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0007.html">AML.T0007</a></td>
+<td align="left"><a href="AML.T0007.html">Discover ML Artifacts</a></td>
+<td align="left">Adversaries may search private sources to identify machine learning artifacts that exist on the system and gather information about them. These artifacts can include the software stack used to train and deploy models, training and testing data management systems, container registries, software repositories, and model zoos.  This information can be used to identify targets for further collection, exfiltration, or disruption, and to tailor and improve attacks.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0011.html">AML.T0011</a></td>
+<td align="left"><a href="AML.T0011.html">User Execution</a></td>
+<td align="left">An adversary may rely upon specific actions by a user in order to gain execution. Users may inadvertently execute unsafe code introduced via <a href="AML.T0010.html">ML Supply Chain Compromise</a>. Users may be subjected to social engineering to get them to execute malicious code by, for example, opening a malicious document file or link.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0011.000.html">AML.T0011.000</a></td>
+<td align="left"><a href="AML.T0011.000.html">Unsafe ML Artifacts</a></td>
+<td align="left">Adversaries may develop unsafe ML artifacts that when executed have a deleterious effect. The adversary can use this technique to establish persistent access to systems. These models may be introduced via a <a href="AML.T0010.html">ML Supply Chain Compromise</a>.  Serialization of models is a popular technique for model storage, transfer, and loading. However, this format without proper checking presents an opportunity for code execution.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0012.html">AML.T0012</a></td>
+<td align="left"><a href="AML.T0012.html">Valid Accounts</a></td>
+<td align="left">Adversaries may obtain and abuse credentials of existing accounts as a means of gaining Initial Access. Credentials may take the form of usernames and passwords of individual user accounts or API keys that provide access to various ML resources and services.  Compromised credentials may provide access to additional ML artifacts and allow the adversary to perform <a href="AML.T0007.html">Discover ML Artifacts</a>. Compromised credentials may also grant and adversary increased privileges such as write access to ML artifacts used during development or production.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0015.html">AML.T0015</a></td>
+<td align="left"><a href="AML.T0015.html">Evade ML Model</a></td>
+<td align="left">Adversaries can <a href="AML.T0043.html">Craft Adversarial Data</a> that prevent a machine learning model from correctly identifying the contents of the data. This technique can be used to evade a downstream task where machine learning is utilized. The adversary may evade machine learning based virus/malware detection, or network scanning towards the goal of a traditional cyber attack.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0018.html">AML.T0018</a></td>
+<td align="left"><a href="AML.T0018.html">Backdoor ML Model</a></td>
+<td align="left">Adversaries may introduce a backdoor into a ML model. A backdoored model operates performs as expected under typical conditions, but will produce the adversary's desired output when a trigger is introduced to the input data. A backdoored model provides the adversary with a persistent artifact on the victim system. The embedded vulnerability is typically activated at a later time by data samples with an <a href="AML.T0043.004.html">Insert Backdoor Trigger</a></td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0018.000.html">AML.T0018.000</a></td>
+<td align="left"><a href="AML.T0018.000.html">Poison ML Model</a></td>
+<td align="left">Adversaries may introduce a backdoor by training the model poisoned data, or by interfering with its training process. The model learns to associate a adversary defined trigger with the adversary's desired output.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0018.001.html">AML.T0018.001</a></td>
+<td align="left"><a href="AML.T0018.001.html">Inject Payload</a></td>
+<td align="left">Adversaries may introduce a backdoor into a model by injecting a payload into the model file. The payload detects the presence of the trigger and bypasses the model, instead producing the adversary's desired output.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0024.html">AML.T0024</a></td>
+<td align="left"><a href="AML.T0024.html">Exfiltration via ML Inference API</a></td>
+<td align="left">Adversaries may exfiltrate private information via <a href="AML.T0040.html">ML Model Inference API Access</a>. ML Models have been shown leak private information about their training data (e.g.  <a href="AML.T0024.000.html">Infer Training Data Membership</a>, <a href="AML.T0024.001.html">Invert ML Model</a>). The model itself may also be extracted (<a href="AML.T0024.002.html">Extract ML Model</a>) for the purposes of <a href="AML.T0045.html">ML Intellectual Property Theft</a>.  Exfiltration of information relating to private training data raises privacy concerns. Private training data may include personally identifiable information, or other protected data.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0024.000.html">AML.T0024.000</a></td>
+<td align="left"><a href="AML.T0024.000.html">Infer Training Data Membership</a></td>
+<td align="left">Adversaries may infer the membership of a data sample in its training set, which raises privacy concerns. Some strategies make use of a shadow model that could be obtained via <a href="AML.T0005.001.html">Train Proxy via Replication</a>, others use statistics of model prediction scores.  This can cause the victim model to leak private information, such as PII of those in the training set or other forms of protected IP.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0024.001.html">AML.T0024.001</a></td>
+<td align="left"><a href="AML.T0024.001.html">Invert ML Model</a></td>
+<td align="left">Machine learning models' training data could be reconstructed by exploiting the confidence scores that are available via an inference API. By querying the inference API strategically, adversaries can back out potentially private information embedded within the training data. This could lead to privacy violations if the attacker can reconstruct the data of sensitive features used in the algorithm.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0024.002.html">AML.T0024.002</a></td>
+<td align="left"><a href="AML.T0024.002.html">Extract ML Model</a></td>
+<td align="left">Adversaries may extract a functional copy of a private model. By repeatedly querying the victim's <a href="AML.T0040.html">ML Model Inference API Access</a>, the adversary can collect the target model's inferences into a dataset. The inferences are used as labels for training a separate model offline that will mimic the behavior and performance of the target model.  Adversaries may extract the model to avoid paying per query in a machine learning as a service setting. Model extraction is used for <a href="AML.T0045.html">ML Intellectual Property Theft</a>.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0025.html">AML.T0025</a></td>
+<td align="left"><a href="AML.T0025.html">Exfiltration via Cyber Means</a></td>
+<td align="left">Adversaries may exfiltrate ML artifacts or other information relevant to their goals via traditional cyber means.  See the ATT&amp;CK <a href="https://attack.mitre.org/tactics/TA0010/">Exfiltration</a> tactic for more information.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0029.html">AML.T0029</a></td>
+<td align="left"><a href="AML.T0029.html">Denial of ML Service</a></td>
+<td align="left">Adversaries may target machine learning systems with a flood of requests for the purpose of degrading or shutting down the service. Since many machine learning systems require significant amounts of specialized compute, they are often expensive bottlenecks that can become overloaded. Adversaries can intentionally craft inputs that require heavy amounts of useless compute from the machine learning system.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0046.html">AML.T0046</a></td>
+<td align="left"><a href="AML.T0046.html">Spamming ML System with Chaff Data</a></td>
+<td align="left">Adversaries may spam the machine learning system with chaff data that causes increase in the number of detections. This can cause analysts at the victim organization to waste time reviewing and correcting incorrect inferences.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0031.html">AML.T0031</a></td>
+<td align="left"><a href="AML.T0031.html">Erode ML Model Integrity</a></td>
+<td align="left">Adversaries may degrade the target model's performance with adversarial data inputs to erode confidence in the system over time. This can lead to the victim organization wasting time and money both attempting to fix the system and performing the tasks it was meant to automate by hand.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0034.html">AML.T0034</a></td>
+<td align="left"><a href="AML.T0034.html">Cost Harvesting</a></td>
+<td align="left">Adversaries may target different machine learning services to send useless queries or computationally expensive inputs to increase the cost of running services at the victim organization. Sponge examples are a particular type of adversarial data designed to maximize energy consumption and thus operating cost.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0035.html">AML.T0035</a></td>
+<td align="left"><a href="AML.T0035.html">ML Artifact Collection</a></td>
+<td align="left">Adversaries may collect ML artifacts for <a href="/tactics/AML.TA0010">Exfiltration</a> or for use in <a href="/tactics/AML.TA0001">ML Attack Staging</a>. ML artifacts include models and datasets as well as other telemetry data produced when interacting with a model.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0036.html">AML.T0036</a></td>
+<td align="left"><a href="AML.T0036.html">Data from Information Repositories</a></td>
+<td align="left">Adversaries may leverage information repositories to mine valuable information. Information repositories are tools that allow for storage of information, typically to facilitate collaboration or information sharing between users, and can store a wide variety of data that may aid adversaries in further objectives, or direct access to the target information.  Information stored in a repository may vary based on the specific instance or environment. Specific common information repositories include Sharepoint, Confluence, and enterprise databases such as SQL Server.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0042.html">AML.T0042</a></td>
+<td align="left"><a href="AML.T0042.html">Verify Attack</a></td>
+<td align="left">Adversaries can verify the efficacy of their attack via an inference API or access to an offline copy of the target model. This gives the adversary confidence that their approach works and allows them to carry out the attack at a later time of their choosing. The adversary may verify the attack once but use it against many edge devices running copies of the target model. The adversary may verify their attack digitally, then deploy it in the <a href="AML.T0041.html">Physical Environment Access</a> at a later time. Verifying the attack may be hard to detect since the adversary can use a minimal number of queries or an offline copy of the model.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0043.html">AML.T0043</a></td>
+<td align="left"><a href="AML.T0043.html">Craft Adversarial Data</a></td>
+<td align="left">Adversarial data are inputs to a machine learning model that have been modified such that they cause the adversary's desired effect in the target model. Effects can range from misclassification, to missed detections, to maximising energy consumption. Typically, the modification is constrained in magnitude or location so that a human still perceives the data as if it were unmodified, but human perceptibility may not always be a concern depending on the adversary's intended effect. For example, an adversarial input for an image classification task is an image the machine learning model would misclassify, but a human would still recognize as containing the correct class.  Depending on the adversary's knowledge of and access to the target model, the adversary may use different classes of algorithms to develop the adversarial example such as <a href="AML.T0043.000.html">White-Box Optimization</a>, <a href="AML.T0043.001.html">Black-Box Optimization</a>, <a href="AML.T0043.002.html">Black-Box Transfer</a>, or <a href="AML.T0043.003.html">Manual Modification</a>.  The adversary may <a href="AML.T0042.html">Verify Attack</a> their approach works if they have white-box or inference API access to the model. This allows the adversary to gain confidence their attack is effective "live" environment where their attack may be noticed. They can then use the attack at a later time to accomplish their goals. An adversary may optimize adversarial examples for <a href="AML.T0015.html">Evade ML Model</a>, or to <a href="AML.T0031.html">Erode ML Model Integrity</a>.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0043.000.html">AML.T0043.000</a></td>
+<td align="left"><a href="AML.T0043.000.html">White-Box Optimization</a></td>
+<td align="left">In White-Box Optimization, the adversary has full access to the target model and optimizes the adversarial example directly. Adversarial examples trained in this manor are most effective against the target model.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0043.001.html">AML.T0043.001</a></td>
+<td align="left"><a href="AML.T0043.001.html">Black-Box Optimization</a></td>
+<td align="left">In Black-Box attacks, the adversary has black-box (i.e. <a href="AML.T0040.html">ML Model Inference API Access</a> via API access) access to the target model. With black-box attacks, the adversary may be using an API that the victim is monitoring. These attacks are generally less effective and require more inferences than <a href="AML.T0043.000.html">White-Box Optimization</a> attacks, but they require much less access.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0043.002.html">AML.T0043.002</a></td>
+<td align="left"><a href="AML.T0043.002.html">Black-Box Transfer</a></td>
+<td align="left">In Black-Box Transfer attacks, the adversary uses one or more proxy models (trained via <a href="AML.T0005.html">Create Proxy ML Model</a> or <a href="AML.T0005.001.html">Train Proxy via Replication</a>) models they have full access to and are representative of the target model. The adversary uses <a href="AML.T0043.000.html">White-Box Optimization</a> on the proxy models to generate adversarial examples. If the set of proxy models are close enough to the target model, the adversarial example should generalize from one to another. This means that an attack that works for the proxy models will likely then work for the target model. If the adversary has <a href="AML.T0040.html">ML Model Inference API Access</a>, they may use this <a href="AML.T0042.html">Verify Attack</a> that the attack is working and incorporate that information into their training process.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0043.003.html">AML.T0043.003</a></td>
+<td align="left"><a href="AML.T0043.003.html">Manual Modification</a></td>
+<td align="left">Adversaries may manually modify the input data to craft adversarial data. They may use their knowledge of the target model to modify parts of the data they suspect helps the model in performing its task. The adversary may use trial and error until they are able to verify they have a working adversarial input.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0043.004.html">AML.T0043.004</a></td>
+<td align="left"><a href="AML.T0043.004.html">Insert Backdoor Trigger</a></td>
+<td align="left">The adversary may add a perceptual trigger into inference data. The trigger may be imperceptible or non-obvious to humans. This technique is used in conjunction with <a href="AML.T0018.000.html">Poison ML Model</a> and allows the adversary to produce their desired effect in the target model.</td>
+</tr>
+<tr>
+<td align="left"><a href="AML.T0045.html">AML.T0045</a></td>
+<td align="left"><a href="AML.T0045.html">ML Intellectual Property Theft</a></td>
+<td align="left">Adversaries may exfiltrate ML artifacts to steal intellectual property and cause economic harm to the victim organization.  Proprietary training data is costly to collect and annotate and may be a target for <a href="/tactics/AML.TA0010">Exfiltration</a> and theft.  MLaaS providers charge for use of their API. An adversary who has stolen a model via <a href="/tactics/AML.TA0010">Exfiltration</a> or via <a href="AML.T0024.002.html">Extract ML Model</a> now has unlimited use of that service without paying the owner of the intellectual property.</td>
+</tr>
+</tbody>
+</table>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../tactics/AML.TA0011.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Impact" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Impact
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="AML.T0000.000.html" class="md-footer__link md-footer__link--next" aria-label="Next: Search for Victim&#39;s Publicly Available Research Materials: Journals and Conference Proceedings" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Search for Victim's Publicly Available Research Materials: Journals and Conference Proceedings
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2021-2022 The MITRE Corporation | v4.0.0
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.indexes"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.748e2769.min.js"></script>
+      
+    
+  </body>
+</html>
